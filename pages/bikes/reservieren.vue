@@ -8,9 +8,13 @@
     </section>
     <form @submit.prevent="reserve()" class="mt-3">
       <label class="floating-label mb-3 mt-3">
+        <span>Your Phone</span>
+        <input v-model="form.phone" type="email" class="input w-full validator" required/>
+        <div class="validator-hint block text-center">Enter valid email address</div>
+      </label>
+      <label class="floating-label mb-3 mt-3">
         <span>Your Email</span>
         <input v-model="form.email" type="email" class="input w-full validator" required/>
-
         <div class="validator-hint block text-center">Enter valid email address</div>
       </label>
       <label class="floating-label mb-3">
@@ -38,10 +42,13 @@
 </template>
 
 <script setup lang="ts">
+import {addBreadcrumb} from "~/util/breadcrumbs";
+
 const route = useRoute();
 const router = useRouter();
 const form = ref({
   email: '',
+  phone: '',
   week: '',
   typ: ''
 });
@@ -50,6 +57,12 @@ onMounted(() => {
   if (!route.query.id) {
     router.push('/de/bikes');
   }
+  addBreadcrumb({
+    id: 'abc123',
+    label: 'test123',
+    icon: '',
+    link: '',
+  })
 })
 
 const reserve = () => {
