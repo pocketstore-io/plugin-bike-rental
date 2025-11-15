@@ -1,3 +1,3 @@
 <template>
-  Reservieren
+  Bike Rental admin
 </template>

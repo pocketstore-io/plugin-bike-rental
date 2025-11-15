@@ -18,6 +18,7 @@
       </div>
     </div>
   </div>
+  <!-- MODAL for booking -->
 </template>
 
 <script setup lang="ts">
