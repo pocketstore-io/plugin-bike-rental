@@ -1,0 +1,6 @@
+{
+  "vendor": "pocketstore-io",
+  "name": "bike-rental",
+  "type": "plugin",
+  "prio": 100
+}
