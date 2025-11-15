@@ -16,6 +16,11 @@
         <div class="badge badge-outline">clothes</div>
         <div class="badge badge-outline">rental</div>
       </div>
+      <div class="card-actions">
+        <button class="btn btn-primary">
+          reservieren
+        </button>
+      </div>
     </div>
   </div>
   <!-- MODAL for booking -->
