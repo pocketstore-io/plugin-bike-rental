@@ -17,9 +17,9 @@
         <div class="badge badge-outline">rental</div>
       </div>
       <div class="card-actions">
-        <button class="btn btn-primary">
+        <a href="/de/bikes/reservieren" class="btn btn-primary">
           reservieren
-        </button>
+        </a>
       </div>
     </div>
   </div>
