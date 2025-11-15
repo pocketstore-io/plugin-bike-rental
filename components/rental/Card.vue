@@ -17,7 +17,7 @@
         <div class="badge badge-outline">Bikes</div>
       </div>
       <div class="card-actions">
-        <a href="/de/bikes/reservieren" class="btn btn-primary">
+        <a v-if="props.reserve" :href="'/de/bikes/reservieren?id='+props.identifier" class="btn btn-primary">
           reservieren
         </a>
       </div>
@@ -27,4 +27,8 @@
 </template>
 
 <script setup lang="ts">
+const props = defineProps({
+  reserve: {type:Boolean, default: true},
+  identifier: {type:String, default: ''},
+})
 </script>
