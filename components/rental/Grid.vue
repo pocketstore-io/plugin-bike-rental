@@ -9,5 +9,5 @@
 </template>
 
 <script setup lang="ts">
-import RentalCard from "./RentalCard.vue";
+import RentalCard from "./Card.vue";
 </script>
