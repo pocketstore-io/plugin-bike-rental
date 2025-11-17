@@ -13,6 +13,6 @@
 </template>
 <script setup lang="ts">
 import RentalGrid from "@/components/rental/Grid.vue";
-import {usePocketBase} from "~/util/pocketbase";
+import {usePocketBase} from "~/utils/pocketbase";
 const pb = usePocketBase()
 </script>
