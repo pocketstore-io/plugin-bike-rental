@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import {addBreadcrumb} from "~/utils/breadcrumbs";
+import {addBreadcrumb} from "~/utils/breadcrumb";
 
 const route = useRoute();
 const router = useRouter();
